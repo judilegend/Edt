@@ -26,3 +26,23 @@
 .e-schedule .e-vertical-view .e-header-cells.e-current-day {
   color: blue;
 }
+.e-btn.e-flat.e-primary,
+.e-css.e-btn.e-flat.e-primary {
+  color: rgb(11, 204, 4);
+  /* color: white; */
+}
+.e-btn.e-flat.e-primary:hover,
+.e-css.e-btn.e-flat.e-primary:hover {
+  /* background: rgb(11, 204, 4); */
+  /* color: white; */
+}
+.e-schedule .e-schedule-toolbar .e-active-view .e-tbar-btn-text,
+.e-schedule .e-schedule-toolbar .e-active-view .e-icons {
+  color: blue;
+}
+.e-btn.e-flat.e-primary:hover,
+.e-css.e-btn.e-flat.e-primary:hover {
+  background: rgba(227, 22, 91, 0.04);
+  border-color: transparent;
+  color: rgb(11, 204, 4);
+}
