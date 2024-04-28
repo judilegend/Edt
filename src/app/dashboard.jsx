@@ -18,12 +18,11 @@ import {
 } from "@syncfusion/ej2-react-schedule";
 import { timelineResourceData } from "./dataSource";
 import { registerLicense } from "@syncfusion/ej2-base";
-import { Suspense, useRef } from "react";
+import { useRef } from "react";
 registerLicense(
   "Ngo9BigBOggjHTQxAR8/V1NBaF5cWWJCe0x0Q3xbf1x0ZFRGal5VTnNdUiweQnxTdEFjXX1YcXRXQWVYVER0WA=="
 );
-import Loading from "./Loading";
-export default function myComponents() {
+export default function Dashboard() {
   const eventSettings = { dataSource: timelineResourceData };
   const scheduleObj = useRef(null);
 
@@ -48,6 +47,17 @@ export default function myComponents() {
   };
   return (
     <>
+      {/* <Inject
+        services={[
+          Day,
+          Week,
+          Month,
+          WorkWeek,
+          Resize,
+          DragAndDrop,
+          ExcelExport,
+        ]}
+      /> */}
       <ScheduleComponent
         cssClass="excel-export"
         width="100%"

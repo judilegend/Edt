@@ -1,91 +1,33 @@
 "use client";
-import {
-  Week,
-  Month,
-  Agenda,
-  ScheduleComponent,
-  ViewsDirective,
-  ViewDirective,
-  EventSettingsModel,
-  ResourcesDirective,
-  ResourceDirective,
-  Inject,
-  Resize,
-  DragAndDrop,
-  WorkWeek,
-  Day,
-  ExcelExport,
-} from "@syncfusion/ej2-react-schedule";
-import { timelineResourceData } from "./dataSource";
-import { registerLicense } from "@syncfusion/ej2-base";
-import { useRef } from "react";
-registerLicense(
-  "Ngo9BigBOggjHTQxAR8/V1NBaF5cWWJCe0x0Q3xbf1x0ZFRGal5VTnNdUiweQnxTdEFjXX1YcXRXQWVYVER0WA=="
-);
+import { useState, useEffect } from "react";
+
+import dynamic from "next/dynamic";
+import Loading from "../Loading";
+
+const MyComponentsDynamic = dynamic(() => import("./dashboard"), {
+  loading: () => <Loading />,
+});
+
 export default function Home() {
-  const eventSettings = { dataSource: timelineResourceData };
-  const scheduleObj = useRef(null);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const onActionBegin = (args) => {
-    if (args.requestType === "toolbarItemRendering") {
-      let exportItem = {
-        align: "Right",
-        showTextOn: "Both",
+  useEffect(() => {
+    // Simuler une durée de chargement avant de masquer l'animation de chargement
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 6000); // 2000 millisecondes (2 secondes)
 
-        prefixIcon: "e-icon-schedule-excel-export",
-        text: "Excel Export ",
+    // Nettoyer le timer lors du démontage du composant
+    return () => clearTimeout(timer);
+  }, []);
 
-        cssClass: "e-excel-export",
-        click: onExportClick,
-      };
-      args.items.push(exportItem);
-    }
-  };
-  const onExportClick = () => {
-    let exportValues = { fileName: "SchedulerData" };
-    scheduleObj.current.exportToExcel(exportValues);
-  };
   return (
-    <>
-      {/* <Inject
-        services={[
-          Day,
-          Week,
-          Month,
-          WorkWeek,
-          Resize,
-          DragAndDrop,
-          ExcelExport,
-        ]}
-      /> */}
-      <ScheduleComponent
-        cssClass="excel-export"
-        width="100%"
-        height="100%"
-        id="schedule"
-        ref={scheduleObj}
-        currentView="Month"
-        selectedDate={new Date(2019, 0, 10)}
-        // eventSettings={eventSettings}
-
-        actionBegin={onActionBegin}
-      >
-        {/* <ViewsDirective>
-          <ViewDirective option="Month" />
-        </ViewsDirective> */}
-        {/* <Inject services={[Week, Resize, DragAndDrop, ExcelExport]} /> */}
-        <Inject
-          services={[
-            Day,
-            Week,
-            Month,
-            WorkWeek,
-            Resize,
-            DragAndDrop,
-            ExcelExport,
-          ]}
-        />
-      </ScheduleComponent>
-    </>
+    <div>
+      {isLoading ? (
+        <Loading /> // Afficher l'animation de chargement si isLoading est vrai
+      ) : (
+        <MyComponentsDynamic /> // Afficher votre composant dynamique une fois le chargement terminé
+      )}
+    </div>
   );
 }

@@ -15,7 +15,7 @@ export default function Home() {
     // Simuler une durée de chargement avant de masquer l'animation de chargement
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // 2000 millisecondes (2 secondes)
+    }, 6000); // 2000 millisecondes (2 secondes)
 
     // Nettoyer le timer lors du démontage du composant
     return () => clearTimeout(timer);
