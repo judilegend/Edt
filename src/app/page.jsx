@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 import dynamic from "next/dynamic";
-import Loading from "../Loading";
+import Loading from "./Loading";
 
 const MyComponentsDynamic = dynamic(() => import("./dashboard"), {
   loading: () => <Loading />,
