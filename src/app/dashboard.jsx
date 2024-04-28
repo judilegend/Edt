@@ -61,7 +61,7 @@ export default function Dashboard() {
       <ScheduleComponent
         cssClass="excel-export"
         width="100%"
-        height="100%"
+        height="100vh"
         id="schedule"
         ref={scheduleObj}
         currentView="Month"
