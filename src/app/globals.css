@@ -28,13 +28,43 @@
 }
 .e-btn.e-flat.e-primary,
 .e-css.e-btn.e-flat.e-primary {
-  color: rgb(11, 204, 4);
+  color: blue;
   /* color: white; */
 }
 .e-btn.e-flat.e-primary:hover,
 .e-css.e-btn.e-flat.e-primary:hover {
   /* background: rgb(11, 204, 4); */
   /* color: white; */
+}
+.e-schedule .e-vertical-view .e-previous-timeline {
+  border-top: 1px dotted blue;
+}
+.e-calendar .e-content.e-year td.e-selected:hover span.e-day,
+.e-calendar .e-content.e-decade td.e-selected:hover span.e-day,
+.e-bigger.e-small .e-calendar .e-content.e-year td.e-selected:hover span.e-day,
+.e-bigger.e-small
+  .e-calendar
+  .e-content.e-decade
+  td.e-selected:hover
+  span.e-day {
+  background: orange;
+}
+.e-schedule .e-vertical-view .e-clone-time-indicator,
+.e-schedule .e-vertical-view .e-current-time {
+  color: blue;
+}
+.e-schedule .e-vertical-view .e-current-timeline {
+  border-top: 1px solid blue;
+}
+.e-calendar .e-content.e-year td.e-selected span.e-day,
+.e-calendar .e-content.e-decade td.e-selected span.e-day,
+.e-bigger.e-small .e-calendar .e-content.e-year td.e-selected span.e-day,
+.e-bigger.e-small
+  .e-calendar
+  .e-content.e-decade
+  td.e-selected:hover
+  span.e-day {
+  background: orange;
 }
 .e-schedule .e-schedule-toolbar .e-active-view .e-tbar-btn-text,
 .e-schedule .e-schedule-toolbar .e-active-view .e-icons {
@@ -44,7 +74,51 @@
 .e-css.e-btn.e-flat.e-primary:hover {
   background: rgba(227, 22, 91, 0.04);
   border-color: transparent;
-  color: rgb(11, 204, 4);
+  color: orange;
+}
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(
+    .e-float-input
+  )::before,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(
+    .e-float-input
+  )::after,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input)
+  .e-input-in-wrap::before,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input)
+  .e-input-in-wrap::after,
+.e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before,
+.e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after,
+.e-float-input.e-input-group.e-float-icon-left
+  .e-input-in-wrap
+  .e-float-line::before,
+.e-float-input.e-input-group.e-float-icon-left
+  .e-input-in-wrap
+  .e-float-line::after,
+.e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left)
+  .e-float-line::before,
+.e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left)
+  .e-float-line::after,
+.e-float-input.e-control-wrapper.e-input-group.e-float-icon-left
+  .e-input-in-wrap
+  .e-float-line::before,
+.e-float-input.e-control-wrapper.e-input-group.e-float-icon-left
+  .e-input-in-wrap
+  .e-float-line::after {
+  background: blue;
+}
+.e-checkbox-wrapper .e-frame.e-check,
+.e-css.e-checkbox-wrapper .e-frame.e-check {
+  background: blue;
+}
+.e-checkbox-wrapper:hover .e-frame.e-check,
+.e-css.e-checkbox-wrapper:hover .e-frame.e-check,
+.e-checkbox-wrapper:focus .e-frame.e-check,
+.e-css.e-checkbox-wrapper:focus {
+  background: blue;
 }
 /********************loading**********************/
 .loader {

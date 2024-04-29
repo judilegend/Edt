@@ -19,6 +19,7 @@ import {
 import { timelineResourceData } from "./dataSource";
 import { registerLicense } from "@syncfusion/ej2-base";
 import { useRef } from "react";
+import { Button } from "@nextui-org/react";
 registerLicense(
   "Ngo9BigBOggjHTQxAR8/V1NBaF5cWWJCe0x0Q3xbf1x0ZFRGal5VTnNdUiweQnxTdEFjXX1YcXRXQWVYVER0WA=="
 );
