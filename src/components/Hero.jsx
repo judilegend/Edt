@@ -11,7 +11,7 @@ export const Hero = () => {
           Voici une application qui a pour but de gerer des emplois du temps au
           sein de l'ENI d'une semaine
         </h3>
-        <a href="/login">
+        <a href="/auth">
           <Button
             variant="flat"
             color="warning"
