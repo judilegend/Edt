@@ -2,13 +2,13 @@
 import { useState, useEffect } from "react";
 
 import dynamic from "next/dynamic";
-import Loading from "../Loading";
+import Loading from "../../Loading";
 
-const MyComponentsDynamic = dynamic(() => import("../dashboard"), {
+const MyComponentsDynamic = dynamic(() => import("../../dashboard"), {
   loading: () => <Loading />,
 });
 
-export default function Home() {
+export default function Home({ params }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

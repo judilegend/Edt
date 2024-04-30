@@ -6,15 +6,16 @@ import axios from "axios";
 import { Button, Input, Link, Card, CardBody } from "@nextui-org/react";
 import { ToastContainer, toast } from "react-toastify";
 import { Tabs, Tab } from "@nextui-org/react";
-// import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.css";
 import { EyeFilledIcon } from "../../Icons/EyesFilled";
 import { EyeSlashFilledIcon } from "../../Icons/EyesFlash";
+import { useRouter } from "next/navigation";
 function Identifiant() {
   const [input, setInput] = useState([]);
   // const naviagate = useNavigate();
   const [selected, setSelected] = useState("login");
   const [isVisible, setIsVisible] = useState(false);
-
+  const router = useRouter(); // Initialiser useRouter à l'intérieur du composant
   const toggleVisibility = () => setIsVisible(!isVisible);
   const change = (e) => {
     const name = e.target.name;
@@ -112,6 +113,8 @@ function Identifiant() {
           console.log(input.email);
           console.log(response.data.token);
           // naviagate(`/dashboard/${response.data.id}`);
+          // const router = useRouter(); // Initialiser useRouter
+          router.push(`/dashboard/${response.data.id}`); // Naviguer vers la page de tableau de bor
         }
       } else {
         console.log("Email ou mot de passe invalide");
