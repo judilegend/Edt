@@ -1,8 +1,9 @@
+"use client";
 import React from "react";
 import { Tabs, Tab } from "@nextui-org/react";
 // import Footer from '../composant/footer'
 import Identifiant from "./Identifiant";
-function authentifier() {
+function Authentifier() {
   return (
     <>
       <main className=" h-[80vh]  w-full  flex justify-center items-center">
@@ -16,8 +17,8 @@ function authentifier() {
             Veillez choisir une option
             <span className="text-[#F8A700]">
               {" "}
-              ou vous voulez s'authentifier
-            </span>{" "}
+              ou vous voulez s'Authentifier
+            </span>
           </h1>
           <div className="flex flex-col mt-5 justify-center items-center ">
             <Tabs color={"warning"} aria-label="Tabs colors" radius="full">
@@ -36,4 +37,4 @@ function authentifier() {
   );
 }
 
-export default authentifier;
+export default Authentifier;

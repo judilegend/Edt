@@ -3,24 +3,17 @@ import React, { useState } from "react";
 import axios from "axios";
 // import { useNavigate } from "react-router-dom";
 // import Link from "next/link";
-import {
-  Button,
-  Input,
-  Tabs,
-  Tab,
-  Link,
-  Card,
-  CardBody,
-} from "@nextui-org/react";
+import { Button, Input, Link, Card, CardBody } from "@nextui-org/react";
 import { ToastContainer, toast } from "react-toastify";
+import { Tabs, Tab } from "@nextui-org/react";
 // import "react-toastify/dist/ReactToastify.css";
 import { EyeFilledIcon } from "../../Icons/EyesFilled";
 import { EyeSlashFilledIcon } from "../../Icons/EyesFlash";
 function Identifiant() {
   const [input, setInput] = useState([]);
   // const naviagate = useNavigate();
-  const [selected, setSelected] = React.useState("login");
-  const [isVisible, setIsVisible] = React.useState(false);
+  const [selected, setSelected] = useState("login");
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => setIsVisible(!isVisible);
   const change = (e) => {
