@@ -511,6 +511,299 @@ body {
   span.e-day {
   background: orange;
 }
+.e-float-input:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input.e-bigger:not(.e-error) input:focus ~ label.e-float-text,
+.e-bigger .e-float-input:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input.e-small:not(.e-error) input:focus ~ label.e-float-text,
+.e-small .e-float-input:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-bigger:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-small:not(.e-error) input[readonly]:focus ~ label.e-float-text,
+.e-small
+  .e-float-input:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-float-text.e-label-top,
+.e-float-input.e-small.e-bigger:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-small:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-float-text,
+.e-small
+  .e-float-input.e-control-wrapper:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-float-text.e-label-top,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper.e-small:not(.e-error)
+  input[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-float-input:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-bigger:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-small:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-float-text,
+.e-small
+  .e-float-input:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-float-text.e-label-top,
+.e-float-input.e-small.e-bigger:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-small:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-float-text,
+.e-small
+  .e-float-input.e-control-wrapper:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-float-text.e-label-top,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus
+  input[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-float-input:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-bigger:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-small:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-float-text,
+.e-small
+  .e-float-input:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-float-text.e-label-top,
+.e-float-input.e-small.e-bigger:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-small:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-label-top.e-float-text
+  .e-float-input.e-control-wrapper.e-small:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-float-text,
+.e-small
+  .e-float-input.e-control-wrapper:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-float-text.e-label-top,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper.e-small:not(.e-error)
+  textarea[readonly]:focus
+  ~ label.e-label-top.e-float-text,
+.e-float-input:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-bigger:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-small:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-float-text,
+.e-small
+  .e-float-input:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-float-text.e-label-top,
+.e-float-input.e-small.e-bigger:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-small:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-label-top.e-float-text
+  .e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-float-text,
+.e-small
+  .e-float-input.e-control-wrapper:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-float-text.e-label-top,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus
+  textarea[readonly]
+  ~ label.e-label-top.e-float-text,
+.e-float-input.e-small.e-bigger:not(.e-error) input:focus ~ label.e-float-text,
+.e-bigger .e-float-input.e-small:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-float-input.e-bigger:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-bigger .e-float-input:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-float-input.e-small:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-small .e-float-input:not(.e-error) textarea:focus ~ label.e-float-text,
+.e-float-input.e-small.e-bigger:not(.e-error)
+  textarea:focus
+  ~ label.e-float-text,
+.e-bigger
+  .e-float-input.e-small:not(.e-error)
+  textarea:focus
+  ~ label.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error) input:focus ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error)
+  input:focus
+  ~ label.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper:not(.e-error)
+  input:focus
+  ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error)
+  input:focus
+  ~ label.e-float-text,
+.e-small
+  .e-float-input.e-control-wrapper:not(.e-error)
+  input:focus
+  ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error)
+  input:focus
+  ~ label.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper.e-small:not(.e-error)
+  input:focus
+  ~ label.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error)
+  textarea:focus
+  ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error)
+  textarea:focus
+  ~ label.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper:not(.e-error)
+  textarea:focus
+  ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error)
+  textarea:focus
+  ~ label.e-float-text,
+.e-small
+  .e-float-input.e-control-wrapper:not(.e-error)
+  textarea:focus
+  ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error)
+  textarea:focus
+  ~ label.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper.e-small:not(.e-error)
+  textarea:focus
+  ~ label.e-float-text,
+.e-float-input:not(.e-error).e-input-focus input ~ label.e-float-text,
+.e-float-input.e-bigger:not(.e-error).e-input-focus input ~ label.e-float-text,
+.e-bigger .e-float-input:not(.e-error).e-input-focus input ~ label.e-float-text,
+.e-float-input.e-small:not(.e-error).e-input-focus input ~ label.e-float-text,
+.e-small .e-float-input:not(.e-error).e-input-focus input ~ label.e-float-text,
+.e-float-input.e-small.e-bigger:not(.e-error).e-input-focus
+  input
+  ~ label.e-float-text,
+.e-bigger
+  .e-float-input.e-small:not(.e-error).e-input-focus
+  input
+  ~ label.e-float-text,
+.e-float-input.e-control-wrapper:not(.e-error).e-input-focus
+  input
+  ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-bigger:not(.e-error).e-input-focus
+  input
+  ~ label.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper:not(.e-error).e-input-focus
+  input
+  ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus
+  input
+  ~ label.e-float-text,
+.e-small
+  .e-float-input.e-control-wrapper:not(.e-error).e-input-focus
+  input
+  ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error).e-input-focus
+  input
+  ~ label.e-float-text,
+.e-bigger
+  .e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus
+  input
+  ~ label.e-float-text {
+  color: blue;
+}
 /********************loading**********************/
 .loader {
   position: relative;
