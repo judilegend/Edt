@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../front"
+	},
+	{
+		"path": "../../../../Documents/Nextjs/learnNextjs/my-app"
+	}
+],
+  "settings": {}
+}

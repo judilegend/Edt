@@ -3,13 +3,12 @@ import { Button } from "@nextui-org/react";
 export const Hero = () => {
   return (
     <main className="px-10 flex  h-[100vh] items-center justify-around 2xl:justify-between 2xl:gap-[600px] max-lg:block ">
-      <section className="max-w-[900px] max-lg:mt-20  text-gray-600 flex flex-col gap-10">
+      <section className="max-w-[900px] max-lg:mt-20  text-gray-500 flex flex-col gap-10">
         <h1 className="text-6xl max-xl:text-5xl max-sm:text-4xl">
           Bienvenue dans l' application de gestion d’emploi du temps
         </h1>
         <h3 className="text-xl">
-          Voici une application qui a pour but de gerer des emplois du temps au
-          sein de l'ENI d'une semaine
+          Voici une application qui a pour but de gerer emplois du temps
         </h3>
         <a href="/auth">
           <Button

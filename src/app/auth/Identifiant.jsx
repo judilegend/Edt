@@ -37,9 +37,9 @@ function Identifiant() {
       // Afficher une notification d'erreur si des champs sont vides
       toast.error("Veuillez remplir tous les champs", {
         position: "bottom-right",
-        autoClose: 3000,
+        // autoClose: 3000,
         hideProgressBar: false,
-        closeOnClick: true,
+        // closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
@@ -78,6 +78,15 @@ function Identifiant() {
           });
           setSelected("login");
         } else {
+          toast.error("Erreur interne du serveur", {
+            position: "bottom-right",
+            // autoClose: 3000,
+            hideProgressBar: false,
+            // closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
           console.log(err);
         }
 
@@ -121,6 +130,15 @@ function Identifiant() {
       }
     } catch (error) {
       console.log("Erreur lors de la connexion", error);
+        toast.error("Erreur interne du serveur", {
+          position: "bottom-right",
+          // autoClose: 3000,
+          hideProgressBar: false,
+          // closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
     }
   };
 
