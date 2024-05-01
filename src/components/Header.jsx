@@ -11,7 +11,7 @@ function Header() {
                 <img src="/logo.svg" alt="" />
               </a>
             </li>
-            <div className="flex items-center gap-5 text-[#F8A700] max-md:text-sm max-md:gap-1">
+            <div className="flex items-center text-[16px] gap-5 text-[#F8A700] max-md:text-sm max-md:gap-1">
               <li>
                 <a href="/auth">Se connecter</a>
               </li>

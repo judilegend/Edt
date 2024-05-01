@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { Tabs, Tab } from "@nextui-org/react";
+import "react-toastify/dist/ReactToastify.css";
+
 // import Footer from '../composant/footer'
 import Identifiant from "./Identifiant";
 function Authentifier() {
@@ -13,7 +15,7 @@ function Authentifier() {
               <img src="/logo.svg" alt="" />
             </a>
           </div>
-          <h1 className="text-md max-w-[450px] mt-5 text-gray-600">
+          <h1 className="text-[16px] max-w-[450px] mt-5 text-gray-600">
             Veillez choisir une option
             <span className="text-[#F8A700]">
               {" "}
